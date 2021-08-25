@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning Bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+
+	<link rel="stylesheet" href="awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="awesome/css/font-awesome.min.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.active{
+			text-decoration: underline !important;
+		}
+	</style>
+</head>
+<body>
+	<!--HEADER-->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light"  >
+
+
+				
+					
+				
+
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="images/thakku.jpg" style=" max-height: 200px; max-width: 100px; margin: 10px;">
+					</a>
+					<a class="navbar-brand" href="#" style=" padding: 5px; margin: 2px;"><strong> Susmita Thakali</strong>  </a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" id="home-head" onclick="showHome()">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="blog-head" onclick="showBlog()"> Blog</a>
+
+							</li>
+
+
+
+							
+						 	<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" id="blog-head" onclick="showBlog() href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Blog
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+							
+
+
+
+
+
+
+							<li class="nav-item">
+								<a class="nav-link" id="contact-head" onclick="showContact()"> Contact </a>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			
+			
+		</div>
+		
+	</div>
+
+
+	<div class="container" id="home">
+		
+		<div class="card" id="about-me">
+			
+			<div class="card-body" >
+
+				<div class="row " style="background-color: #659DBD; color: white; padding: 50px !important; ">
+					<div class="col-md-12 ">
+						<h1 class="text-center"> Home </h1>
+					</div>
+
+
+				</div>
+
+				<!--<h5 class="card-title">Home</h5>-->
+				<p style="font-size: 30px"> <strong>About</strong> <strong style="color:#659DBD ">Me</strong>   </p>  
+				<p class="card-text">
+				Hi there, Its Susmita Thakali from Pokhara Nepal. I'm currently working as an Wb Developer intern at Race Groups which is renowned firm which have four branch working their respect field.</p>
+				<p>Previously I was working as a content writer at GyanHub which is one of the best web development company in Pokhara.
+				</p>
+				<p>	<strong> Find Me On </strong>
+				</p>
+
+
+
+				<!-- <a href="#!" class="btn btn-primary">Button</a> -->
+
+
+				<div class="social-media">
+
+					<!-- Facebook -->
+					<a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/thakalisus" target="_blank" role="button" ><i class="fa  fa-facebook-official"></i></a>
+
+					<!-- Google -->
+					<a class="btn btn-primary" style="background-color: #dd4b39;" href="#" role="button"> <i class="fa fa-google-plus-square"></i></a>
+
+					<!-- Instagram -->
+					<a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" role="button" ><i class="fa fa-instagram"></i ></a>
+
+					<!-- Linkedin -->
+					<a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button" >
+						<i class="fab fa-linkedin"></i></a>
+
+
+						<!-- Youtube -->
+						<a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UC0NGknn9tPq24PgLScXq7yg" target="_blank"role="button" ><i class="fa fa-youtube"></i></a>
+
+
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+
+			
+
+		</div>
+
+
+		
+		<!--CONTACT CONTAINER-->
+		<div class="container" id="contact" style="display: none;">
+
+			<div class="container-fluid" style="padding: 10px;">
+
+
+
+				<div class="row " style="background-color: #659DBD; color: white; padding: 50px !important;  ">
+					<div class="col-md-12 ">
+						<h1 class="text-center"> Contact </h1>
+					</div>
+
+
+				</div>
+
+				<!--CONTACT FORM-->
+				<div class="container" style="margin: 20px;">
+					<div class="row">
+						<div class="col-md-6 col-sm-12 col-lg-6">
+							<h2><strong>To Get In</strong> <strong style="color:#659DBD ">Touch</strong></h2><br>
+							<p> <i class="fa fa-map-marker"></i> &nbsp;&nbsp; Pokhara, Nepal</p>
+							<p><i class="fa fa-envelope"></i>&nbsp;&nbsp;susmithakali123@gmail.com</p>
+							<p><i class="fa fa-phone"></i>&nbsp;&nbsp;9864374912</p>
+							<p><i class="fa fa-check-circle"> </i>&nbsp;&nbsp;Freelance Available</p>
+
+
+						</div>
+
+						<div class="col-md-6 col-sm-12 col-lg-6">
+							<form>
+								<fieldset>
+									<legend style="font-size: 30px;"><strong>Contact</strong>   <strong style="color:#659DBD;">Form</strong>  </legend>
+									<div class="form-group">
+										<label for="exampleInputName">Name</label>
+										<input type="email" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputMessage">Message</label>
+										<input type="card-text" class="form-control" id="exampleInputMessage" placeholder="Message For Me">
+									</div>
+								</fieldset><br>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">I am not a robot</label>
+								</div><br>
+								<div class="message-btn" >
+									<button type="submit" class="btn btn-primary" style="align-self: right !important;">Send Message</button>
+								</div>
+
+							</form>
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+
+
+				<div class="container" style="margin: 30px">
+					<div class="social-media">
+
+						<!-- Facebook -->
+						<a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/thakalisus" target="_blank" role="button" ><i class="fa  fa-facebook-official"></i></a>
+
+						<!-- Google -->
+						<a class="btn btn-primary" style="background-color: #dd4b39;" href="#" target="_blank" role="button"> <i class="fa fa-google-plus-square"></i></a>
+
+						<!-- Instagram -->
+						<a class="btn btn-primary" style="background-color: #ac2bac;" href="#!" target="_blank" role="button" ><i class="fab fa-instagram"></i ></a>
+
+						<!-- Linkedin -->
+						<a class="btn btn-primary" style="background-color: #0082ca;" href="#!" target="_blank" role="button" ><i class="fab fa-linkedin-in"></i ></a>
+
+
+						<!-- Youtube -->
+						<a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UC0NGknn9tPq24PgLScXq7yg" target="_blank" role="button" >
+							<i class="fa fa-youtube"></i>
+						</a>
+
+
+
+					</div>	
+				</div>
+
+			</div> 
+		</div>  
+		<!--container close for contact-->
+
+		
+
+
+		<div class="container" id="blog" style="display: none;">
+			<div class="row " style="background-color: #659DBD; color: white; padding: 50px !important;  ">
+				<div class="col-md-12 ">
+					<h1 class="text-center"> Blog </h1>
+				</div>
+			</div>
+
+		
+
+							<div class="list-group" style="padding: 20px;">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    The current link item
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+</div>
+
+
+		</div>
+
+
+
+		<!-- all javascript code below here -->
+
+	<script>
+		function showHome()
+		{
+			document.getElementById("home").style.display = "block";
+			document.getElementById("blog").style.display = "none";
+			document.getElementById("contact").style.display = "none";
+
+			document.getElementById("home-head").classList.add("active");
+			document.getElementById("blog-head").classList.remove("active");
+			document.getElementById("contact-head").classList.remove("active");
+		}
+
+		function showBlog() 
+		{
+			document.getElementById("blog").style.display = "block";
+			document.getElementById("home").style.display = "none";
+			document.getElementById("contact").style.display = "none";
+
+			document.getElementById("home-head").classList.remove("active");
+			document.getElementById("blog-head").classList.add("active");
+			document.getElementById("contact-head").classList.remove("active");
+		}
+		function showContact() {
+			document.getElementById("contact").style.display = "block";
+			document.getElementById("home").style.display = "none";
+			document.getElementById("blog").style.display = "none";
+
+			document.getElementById("home-head").classList.remove("active");
+			document.getElementById("blog-head").classList.remove("active");
+			document.getElementById("contact-head").classList.add("active");
+		}
+
+	</script>
+
+</body>
+</html>
